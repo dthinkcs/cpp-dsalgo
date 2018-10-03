@@ -1,5 +1,5 @@
 # cpp-dsalgo
-Coding Problems (increasing difficulty) Implemented from scratch
+Algorithmic Coding Problems (increasing difficulty) Implemented from scratch
 
 Problems From 
 Hackerrank
