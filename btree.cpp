@@ -44,15 +44,36 @@ void printTree(BTNode* root)
 	printTree(root->right);
 }
 
+BTNode* takeInput()
+{
+    int input;
+    cin >> input;
+    if (input == -1)
+        return NULL;
+    BTNode* root = new BTNode(input);
 
+    root->left = takeInput();
+    root->right = takeInput();
+
+    return root;
+}
+
+BTNode* takeInputLEVELWISE()
+{
+    // TODO
+}
 
 int main()
 {
-
+    /*
     BTNode* root = new BTNode(10);
     root->left = new BTNode(20);
     root->right = new BTNode(30);
-    printTreeSimple(root);
+
+    //printTreeSimple(root);
+    */
+    BTNode* root = takeInput();
+
     printTree(root);
 
 }
